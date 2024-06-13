@@ -1,3 +1,10 @@
+:root {
+    --clr-primary: #00ff00;
+    --clr-white: #ffffff;
+    --clr-bgblu: #414752;;
+    --clr-clearblk: rgba(0, 0, 0, 0.5);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +14,8 @@
     /* border: solid 1px black; */
 }
 
-
 body {
-    background-color: #414752;/
+    background-color: var(--clr-bgblu);
 }
 
 .hero {
@@ -22,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: #414752;;
+    background-color: var(--clr-bgblu);
     background-image: url('images/hero-image.jpg');
     background-size: cover ;
     background-position: center;
@@ -32,7 +38,7 @@ body {
 }
 
 .title-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-clearblk);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     display: flex;
@@ -47,10 +53,10 @@ body {
 
     font-family: monospace;
     font-size: 5rem;
-    color: lime;
+    color: var(--clr-primary);
     letter-spacing: .3rem;
 
-    border-right: solid .4rem lime;
+    border-right: solid .4rem var(--clr-primary);
     white-space: nowrap;
     overflow: hidden;
     animation: 
@@ -104,7 +110,7 @@ nav a {
 }
 
 .main {
-    background-color: #414752;
+    background-color: var(--clr-bgblu);
     height: auto;
     width: 100%;
 }
@@ -117,14 +123,14 @@ nav a {
 }
 
 #button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-clearblk);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     border-radius: 25%;
 }
 
 footer {
-    background-color: #00ff00;
+    background-color: var(--clr-primary);
     width: 100%;
     height: 20vh;
 
@@ -141,10 +147,10 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--clr-white);
     width: 90%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-clearblk);
 }
 
 .hidden-container {
@@ -153,7 +159,7 @@ footer {
 }
 
 .hidden {
-    color: #00ff00;
+    color: var(--clr-primary);
     text-align: center;
     display: grid;
     place-items: center;
@@ -180,7 +186,7 @@ footer {
 }
 
 .arrows {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-clearblk);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     border-radius: 25%;
@@ -249,7 +255,7 @@ footer {
     display: flex;
     z-index: 999;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-clearblk);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     border-radius: 2rem;
@@ -273,6 +279,6 @@ footer {
 }
 
 #closeButton {
-    border: 2px solid #00ff00;
+    border: 2px solid var(--clr-primary);
     border-radius: 50%;
 }
