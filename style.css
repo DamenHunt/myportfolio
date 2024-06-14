@@ -1,5 +1,5 @@
 :root {
-    --clr-primary: #ff0000;
+    --clr-primary: #00ff00;
     --clr-white: #ffffff;
     --clr-bgblu: #414752;;
     --clr-clearblk: rgba(0, 0, 0, 0.5);
@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
-    /* letter-spacing: .05rem; */
+    letter-spacing: .05rem;
     /* border: solid 1px black; */
 }
 
@@ -262,9 +262,9 @@ footer {
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    padding: 5%;
     /*///////////////////////////*/
-
+    overflow: hidden;
     visibility: hidden;
     transition: transform .5s, top .3s;
 }
@@ -326,7 +326,7 @@ footer {
 }
 
 .top-inner-left a {
-
+    
     text-decoration: none;
     color: var(--clr-primary);
     font-size: 2.5rem;
@@ -339,8 +339,6 @@ footer {
 
 /* ////////// TOP RIGHT DIVIDER///////// */
 .top-inner-right {
-
-    /* flex-grow: 1; */
     width: 50%;
     height: 100%;
 
@@ -366,16 +364,15 @@ footer {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-bottom: 7%;
 }
 
 #closeButton {
     border: 2px solid var(--clr-primary);
     border-radius: 50%;
-    height: 4.5rem;
+    height: 3.5rem;
     align-items: center;
     justify-content: center;
-    margin: 2%;
+    margin: 3%;
 }
 
 #closeButton:hover {
@@ -385,25 +382,15 @@ footer {
         rotation 1s forwards,
         pulse 1s 1s ease-in-out infinite;
 }
-
 /* *********POP UP EDITING********* */
-
-
-
-
-
-
-
-
-
 
 
 
 /* For Mobile Device Scaling */
 @media(max-width: 600px) {
     .title { font-size: 2.3rem; }
-    .icon { height: 3.2rem;}
+    .icon { height: 3.2rem; }
+    .top-inner-left a { font-size: 1.5rem; }
     #openbutton { height: 4rem;}
-    #closeButton { height: 4rem; }
-    .top-inner-left a { font-size: 20px; }
+    #closeButton { height: 3rem; }
 }
