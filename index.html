@@ -11,9 +11,28 @@
 
 <!-- Popout Menu -->
 <div class="popup" id="popup">
-    <div onclick=hidePopup()><img class='icon' id="closeButton" src="icons/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></div>
+    <div class="inner-popout-container">
+        <div class="top-inner-container">
+            <div class="top-inner-left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </div>
+            <div class="top-inner-right">
+                <div class="right-inner-top"></div>
+                <div class="right-inner-bottom"></div>
+            </div>
+        </div>
+        <div class="close-button-container">
+            <img onclick=hidePopup() id="closeButton" src="icons/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </div>
+    </div>
+    
 </div>
-
 
 <!-- Header -->
 <section class="hero">
@@ -29,7 +48,7 @@
         <div>
             <ul class="menu-button">
                 <li onclick=><a href="#"><img class="arrows" id="left-arrow" src="icons/arrow_left_alt_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
-                <li onclick=openPopup()><img class='icon' id="button" src="icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></li>
+                <li onclick=openPopup()><img class='icon' id="openbutton" src="icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></li>
                 <li onclick=><a href="#"><img class="arrows" id="right-arrow" src="icons/arrow_right_alt_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
             </ul>
         </div>
