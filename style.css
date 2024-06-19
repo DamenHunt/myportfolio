@@ -246,6 +246,7 @@ footer {
 .popup {
     height: 70%;
     width: 80%;
+    max-width: 700px;
     z-index: 999;
 
     background-color: var(--clr-clearblk);
@@ -344,15 +345,25 @@ footer {
 
     display: flex;
     flex-direction: column;
+    
+    /* border: 1px solid red; */
 }
 
 .right-inner-top {
     /* border: 1px solid white; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    /* border: 1px solid red; */
 }
 
 .right-inner-bottom {
     /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 /* ///////////////////////////////////// */
@@ -393,4 +404,140 @@ footer {
     .top-inner-left a { font-size: 1.5rem; }
     #openbutton { height: 4rem;}
     #closeButton { height: 3rem; }
+}
+
+
+/* Time App */
+.clock {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clock ul li {
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+}
+
+.clock ul li span {
+    transform: rotate(calc(-30deg * var(--i)));
+    /* display: inline-block; */
+}
+
+.clock:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.needle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.needle span {
+    width: 5px;
+    height: var(--h);
+    background-color: var(--clr);
+    position: absolute;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    border-radius: 3rem;
+    font-size: 7px;
+}
+
+.timeelements {
+    padding: 2%;
+}
+
+
+/* Weather App */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    padding: 4px 0px;
+    text-align: center;
+}
+
+
+.weather-icon {
+   width: 50px; 
+}
+
+.weather h1 {
+    font-size: 20px;
+}
+
+.weather h2 {
+    font-size: 15px;
+}
+
+.details {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 20px;
+    margin-right: 4px;
+}
+
+.humidity, .wind {
+    font-size: 15px;
+    height: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+#hum, #win {
+    font-size: 7px;
+}
+
+.error {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: white;
 }
