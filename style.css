@@ -246,7 +246,7 @@ footer {
 .popup {
     height: 70%;
     width: 80%;
-    max-width: 700px;
+    max-width: 600px;
     z-index: 999;
 
     background-color: var(--clr-clearblk);
@@ -288,7 +288,6 @@ footer {
 }
 
 .top-inner-container {
-
     width: 100%;
     flex-grow: 1;
 
@@ -338,20 +337,23 @@ footer {
     animation: pulse 1s ease-in-out infinite;
 }
 
-/* ////////// TOP RIGHT DIVIDER///////// */
+/* ////////// POPUP RIGHT DIVS///////// */
 .top-inner-right {
     width: 50%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
     
     /* border: 1px solid red; */
 }
 
 .right-inner-top {
+    width: 100%;
     /* border: 1px solid white; */
-    /* flex-grow: 1; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -360,11 +362,11 @@ footer {
 }
 
 .right-inner-bottom {
+    width: 100%;
     /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 }
 /* ///////////////////////////////////// */
 
@@ -378,7 +380,7 @@ footer {
 }
 
 #closeButton {
-    border: 2px solid var(--clr-primary);
+    border: 3px solid var(--clr-primary);
     border-radius: 50%;
     height: 3.5rem;
     align-items: center;
@@ -394,17 +396,6 @@ footer {
         pulse 1s 1s ease-in-out infinite;
 }
 /* *********POP UP EDITING********* */
-
-
-
-/* For Mobile Device Scaling */
-@media(max-width: 600px) {
-    .title { font-size: 2.3rem; }
-    .icon { height: 3.2rem; }
-    .top-inner-left a { font-size: 1.5rem; }
-    #openbutton { height: 4rem;}
-    #closeButton { height: 3rem; }
-}
 
 
 /* Time App */
@@ -479,9 +470,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    max-width: 200px;
+    width: 70%;
+    max-width: 250px;
     background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: RED; */
     color: white;
     border-radius: 20px;
     padding: 4px 0px;
@@ -498,11 +490,12 @@ footer {
 }
 
 .weather h2 {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .details {
-    width: 150px;
+    /* border: 1px solid white; */
+    width: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -516,12 +509,12 @@ footer {
 }
 
 .col img {
-    width: 20px;
+    width: 15px;
     margin-right: 4px;
 }
 
 .humidity, .wind {
-    font-size: 15px;
+    font-size: 10px;
     height: -6px;
 }
 
@@ -540,4 +533,17 @@ footer {
     margin-top: 10px;
     display: none;
     color: white;
+}
+
+
+
+/* For Mobile Device Scaling */
+@media(max-width: 600px) {
+    .title { font-size: 2.3rem; }
+    .icon { height: 3.2rem; }
+    .top-inner-left a { font-size: 2rem; }
+    #openbutton { height: 4rem;}
+    #closeButton { height: 3rem; }
+    .card { width: 120px; }
+    .details { display: none; }
 }
