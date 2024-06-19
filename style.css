@@ -244,7 +244,6 @@ footer {
 
 /* *********POP UP EDITING********* */
 .popup {
-    
 
     height: 70%;
     max-height: 500px;
@@ -266,7 +265,7 @@ footer {
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    padding: 3%;
     /*///////////////////////////*/
 
     overflow: hidden;
@@ -296,6 +295,8 @@ footer {
 
     display: flex;
     flex-direction: row;
+
+    /* border: 1px solid red; */
 }
 
 .top-inner-left {
@@ -349,19 +350,18 @@ footer {
     flex-direction: column;
 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     
     /* border: 1px solid red; */
 }
 
 .right-inner-top {
     width: 100%;
-    /* border: 1px solid white; */
     display: flex;
     align-content: center;
     justify-content: center;
 
-    /* border: 1px solid red; */
+    /* border: 1px solid white; */
 }
 
 .right-inner-bottom {
@@ -453,7 +453,7 @@ footer {
 
 .container {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -474,10 +474,9 @@ footer {
     align-items: center;
     justify-content: center;
     height: 135px;
-    width: 50%;
+    width: 70%;
     max-width: 250px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* background-color: RED; */
     color: white;
     border-radius: 20px;
     padding: 4px 0px;
@@ -495,6 +494,7 @@ footer {
 
 .weather h2 {
     font-size: 10px;
+    display: none;
 }
 
 .details {
@@ -504,6 +504,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     margin: 5px 0px;
+    padding: 2%;
 }
 
 .col {
@@ -545,7 +546,7 @@ footer {
 @media(max-width: 600px) {
     .title { font-size: 2.3rem; }
     .icon { height: 3.2rem; }
-    .top-inner-left a { font-size: 1.6rem; }
+    .top-inner-left a { font-size: 1.7rem; }
     #openbutton { height: 4rem;}
     #closeButton { height: 3rem; }
     .card { width: 120px; }
