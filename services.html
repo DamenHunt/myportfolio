@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Services</title>
+</head>
+<body>
+
+<!-- Popout Menu -->
+<div class="popup" id="popup">
+    <div class="inner-popout-container">
+        <div class="top-inner-container">
+            <div class="top-inner-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="top-inner-right">
+                <div class="right-inner-top"></div>
+                <div class="right-inner-bottom"></div>
+            </div>
+        </div>
+        <div class="close-button-container">
+            <img onclick=hidePopup() id="closeButton" src="icons/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </div>
+    </div> 
+</div>
+
+<!-- Header -->
+<section class="hero">
+    <div class="title-container">
+        <h1 class="title">Website Services</h1>
+    </div>
+</section>
+
+<!-- Main -->
+<section class="main">
+
+    <nav>
+        <div>
+            <ul class="menu-button">
+                <li onclick=><a href="#"><img class="arrows" id="left-arrow" src="icons/arrow_left_alt_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                <li onclick=openPopup()><img class='icon' id="openbutton" src="icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></li>
+                <li onclick=><a href="#"><img class="arrows" id="right-arrow" src="icons/arrow_right_alt_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hidden-container">
+        <section class="hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+    
+        <section class="even hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+    
+        <section class="hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+    
+        <section class="even hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+
+        <section class="hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+
+        <section class="even hidden">
+            <h2>This is sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Repellendus excepturi culpa aspernatur natus, vero possimus?</p>
+        </section>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-box">The website footer is the section of content at the very bottom of a web page. 
+        It typically contains a copyright notice, link to a privacy policy, 
+        sitemap, logo, contact information, social media icons, and an email sign-up form.
+    </div>
+</footer>
+
+</body>
+</html>
+
+
