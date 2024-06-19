@@ -471,6 +471,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100px;
     width: 70%;
     max-width: 250px;
     background-color: rgba(0, 0, 0, 0.5);
