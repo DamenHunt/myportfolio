@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
-    <title>About</title>
+    <title>Home</title>
 </head>
 <body>
 
@@ -16,14 +16,74 @@
             <div class="top-inner-left">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
             </div>
             <div class="top-inner-right">
-                <div class="right-inner-top"></div>
-                <div class="right-inner-bottom"></div>
+                <div class="right-inner-top">
+                    <!-- time app -->
+                    <div class="timeelements">
+
+                        <div class="clock">
+                            <div class="needle hr" style="--h:25px; --clr: rgba(0, 255, 0, 0.5);"><span></span></div>
+                            <div class="needle min" style="--h:35px; --clr: rgba(0, 255, 0, 0.7);"><span></span></div>
+                            <div class="needle sec" style="--h:45px; --clr: rgba(0, 255, 0, 1);"><span></span></div>
+                
+                            <ul>
+                                <li style="--i:1"><span>1</span></li>
+                                <li style="--i:2"><span>2</span></li>
+                                <li style="--i:3"><span>3</span></li>
+                                <li style="--i:4"><span>4</span></li>
+                                <li style="--i:5"><span>5</span></li>
+                                <li style="--i:6"><span>6</span></li>
+                                <li style="--i:7"><span>7</span></li>
+                                <li style="--i:8"><span>8</span></li>
+                                <li style="--i:9"><span>9</span></li>
+                                <li style="--i:10"><span>10</span></li>
+                                <li style="--i:11"><span>11</span></li>
+                                <li style="--i:12"><span>12</span></li>
+                            </ul>
+                        </div>
+                
+                        <div class="container">
+                            <h1 id="currentTime">12:00:00</h1>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="right-inner-bottom">
+                    <!-- weather app -->
+                    <div class="card">
+                        <div class="error">
+                            <p>Cannot Find Weather Location</p>
+                        </div>
+                        <div class="weather">
+                            <img src='' class="weather-icon">
+                            <h1 class="temp">Temperature</h1>
+                            <h2 class="city">City</h2>
+                            <div class="details">
+                                <div class="col">
+                                    <img src="images/humidity.png">
+                                    <div>
+                                        <p class="humidity"></p>
+                                        <p id="hum">Humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="images/wind.png">
+                                    <div>
+                                        <p class="wind"></p>
+                                        <p id="win">Wind Speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
         <div class="close-button-container">
@@ -35,7 +95,7 @@
 <!-- Header -->
 <section class="hero">
     <div class="title-container">
-        <h1 class="title">Hello_World!</h1>
+        <h1 class="title">I Build Websites!</h1>
     </div>
 </section>
 
