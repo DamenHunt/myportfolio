@@ -543,7 +543,7 @@ footer {
 @media(max-width: 600px) {
     .title { font-size: 2.3rem; }
     .icon { height: 3.2rem; }
-    .top-inner-left a { font-size: 1.8rem; }
+    .top-inner-left a { font-size: 1.6rem; }
     #openbutton { height: 4rem;}
     #closeButton { height: 3rem; }
     .card { width: 120px; }
