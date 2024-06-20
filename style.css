@@ -458,6 +458,10 @@ footer {
     border-radius: 5px;
 }
 
+#needle-sec span {
+    width: 2.5px;
+}
+
 .container {
     width: 100%;
     margin: 5%;
@@ -550,7 +554,7 @@ footer {
 
 
 /* For Mobile Device Scaling */
-@media(max-width: 600px) {
+@media(max-width: 650px) {
     .title { font-size: 2.3rem; }
     .icon { height: 3.2rem; }
     .top-inner-left a { font-size: 1.7rem; }
