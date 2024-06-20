@@ -308,12 +308,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* border: 1px solid red; */
 }
 
 .top-inner-left ul {
     /* border: 1px solid red; */
     height: 100%;
     width: 100%;
+
+    /* margin: 5%; */
 
     /* text-align: center; */
     list-style-type: none;
@@ -352,7 +356,7 @@ footer {
     align-items: center;
     justify-content: center;
     
-    /* border: 1px solid red; */
+    /* border: 1px solid white; */
 }
 
 .right-inner-top {
@@ -366,10 +370,13 @@ footer {
 
 .right-inner-bottom {
     width: 100%;
-    /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 2%;
+
+    /* border: 1px solid white; */
 }
 /* ///////////////////////////////////// */
 
@@ -453,14 +460,16 @@ footer {
 
 .container {
     width: 100%;
-    margin-top: 3%;
+    margin: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     color: white;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     font-size: 7px;
+
+    /* border: 1px solid red; */
 }
 
 .timeelements {
@@ -474,7 +483,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 135px;
-    width: 60%;
+    width: 65%;
     max-width: 250px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
