@@ -209,15 +209,15 @@ footer {
 }
 
 @keyframes leftmotion {
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(-15%);}
-    100% {transform: translateX(0%);}
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(-15%); }
+    100% { transform: translateX(0%); }
 }
 
 @keyframes rightmotion {
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(15%);}
-    100% {transform: translateX(0%);}
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(15%); }
+    100% { transform: translateX(0%); }
 }
 
 @keyframes rotation {
@@ -432,7 +432,7 @@ footer {
 
 .clock ul li span {
     transform: rotate(calc(-30deg * var(--i)));
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 .clock:after {
