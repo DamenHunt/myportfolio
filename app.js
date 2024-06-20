@@ -83,11 +83,6 @@ async function checkWeather(position) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
 
-    } else if(!response) {
-
-        document.querySelector(".error").style.display = "block";
-        document.querySelector(".weather").style.display = "none";
-
     } else { 
 
         var data = await response.json();
