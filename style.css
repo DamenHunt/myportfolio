@@ -451,7 +451,7 @@ footer {
 }
 
 .needle span {
-    width: 5px;
+    width: 4px;
     height: var(--h);
     background-color: var(--clr);
     position: absolute;
@@ -459,7 +459,7 @@ footer {
 }
 
 #needle-sec span {
-    width: 2.5px;
+    width: 3px;
 }
 
 .container {
