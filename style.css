@@ -265,7 +265,7 @@ footer {
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 3%;
+    padding: 4%;
     /*///////////////////////////*/
 
     overflow: hidden;
@@ -390,7 +390,7 @@ footer {
 }
 
 #closeButton {
-    border: 3px solid var(--clr-primary);
+    border: 3px solid var(--clr-white);
     border-radius: 50%;
     height: 3.5rem;
     align-items: center;
@@ -547,7 +547,6 @@ footer {
     display: none;
     color: white;
 }
-
 
 
 /* For Mobile Device Scaling */
