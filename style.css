@@ -390,7 +390,7 @@ footer {
 }
 
 #closeButton {
-    border: 3px solid var(--clr-white);
+    border: 2.5px solid var(--clr-white);
     border-radius: 50%;
     height: 3.5rem;
     align-items: center;
