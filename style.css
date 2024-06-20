@@ -437,8 +437,8 @@ footer {
 
 .clock:after {
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
