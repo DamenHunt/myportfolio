@@ -80,7 +80,7 @@ async function checkWeather(position) {
 
     if(response.status == 404) {
 
-        document.querySelector(".error").style.display = "block";
+        document.querySelector(".error").style.display = "flex";
         document.querySelector(".weather").style.display = "none";
 
     } else if(!response) {
