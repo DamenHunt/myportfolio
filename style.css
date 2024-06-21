@@ -411,8 +411,8 @@ footer {
 /* Time App */
 .clock {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
     border-radius: 50%;
     color: white;
     font-size: 10px;
@@ -428,6 +428,7 @@ footer {
     text-align: center;
     transform: rotate(calc(30deg * var(--i)));
     inset: 5px;
+    font-size: 12px;
 }
 
 .clock ul li span {
@@ -458,6 +459,21 @@ footer {
     border-radius: 5px;
 }
 
+.hr span {
+    background-color: white;
+    height: 30px;
+}
+
+.min span {
+    background-color: white;
+    height: 45px;
+}
+
+.sec span {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 62px;
+}
+
 #needle-sec span {
     width: 3px;
 }
@@ -471,7 +487,7 @@ footer {
     /* position: relative; */
     color: white;
     /* border-radius: 3rem; */
-    font-size: 7px;
+    font-size: 8px;
 
     /* border: 1px solid red; */
 }
@@ -494,24 +510,29 @@ footer {
     border-radius: 20px;
     padding: 4px 0px;
     text-align: center;
+
+    /* border: 1px solid red; */
 }
 
 
 .weather-icon {
    width: 50px; 
+   /* border: 1px solid red; */
 }
 
 .weather h1 {
     font-size: 20px;
+    /* border: 1px solid red; */
 }
 
 .weather h2 {
-    font-size: 10px;
+    font-size: 12px;
+    /* border: 1px solid red; */
 }
 
 .details {
     /* border: 1px solid white; */
-    width: 130px;
+    width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -544,12 +565,13 @@ footer {
 }
 
 .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 10px;
-    display: none;
-    color: white;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -560,6 +582,6 @@ footer {
     .top-inner-left a { font-size: 1.7rem; }
     #openbutton { height: 4rem;}
     #closeButton { height: 3rem; }
-    .card { width: 120px; }
+    .card { width: 140px; }
     .details { display: none; }
 }
