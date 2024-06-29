@@ -91,6 +91,7 @@ async function checkWeather(position) {
 
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round((data.main.temp * 1.8) + 32) + "°F";
+        // document.querySelector(".condition").innerHTML = data.weather[0].main;
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = Math.round((data.wind.speed)/1.609) + "mph";
 

@@ -11,7 +11,8 @@
     box-sizing: border-box;
     font-family: monospace;
     letter-spacing: .05rem;
-    /* border: solid 1px black; */
+
+    /* border: solid 1px red; */
 }
 
 body {
@@ -84,7 +85,7 @@ nav {
     justify-content: center;
     width: auto;
     padding: 2%;
-    z-index: 999;
+    z-index: 998;
 }
 
 nav ul {
@@ -232,7 +233,7 @@ footer {
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
 
@@ -261,12 +262,10 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.01);
 
-    /*///////////////////////////*/
     display: block;
     align-items: center;
     justify-content: center;
     padding: 4%;
-    /*///////////////////////////*/
 
     overflow: hidden;
     visibility: hidden;
@@ -346,6 +345,7 @@ footer {
 }
 
 /* ////////// POPUP RIGHT DIVS///////// */
+
 .top-inner-right {
     width: 50%;
     height: 100%;
@@ -396,14 +396,15 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 3%;
+    animation: pulse 1s 1s ease-in-out infinite;
 }
 
 #closeButton:hover {
     transition: 1s;
     border-radius: 50% !important;
-    animation: 
+    /* animation: 
         rotation 1s forwards,
-        pulse 1s 1s ease-in-out infinite;
+        pulse 1s 1s ease-in-out infinite; */
 }
 /* *********POP UP EDITING********* */
 
@@ -527,6 +528,11 @@ footer {
 
 .weather h2 {
     font-size: 12px;
+    /* border: 1px solid red; */
+}
+
+.weather h3 {
+    font-size: 7px;
     /* border: 1px solid red; */
 }
 
