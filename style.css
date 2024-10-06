@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: myCyberFont;
-    src: url(./fonts/Cyberthrone.ttf);
+    font-family: myFont;
+    src: url();
  }
 
 * {
@@ -43,12 +43,6 @@ body {
     
     height: 50vh;
     width: 100%;
-}
-
-header h1 {
-    font-family: myCyberFont, monospace;
-    font-size: 75px;
-    font-weight: 100;
 }
 
 .profile-picture {
