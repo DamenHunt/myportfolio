@@ -1,7 +1,8 @@
 :root {
-    --clr-primary: #00ff00;
+    --clr-primary: #ffffff;
     --clr-white: #ffffff;
-    --clr-bgblu: #414752;;
+    --clr-bgblu: #414752;
+    --clr-bgblu2: #414752ee;
     --clr-clearblk: rgba(0, 0, 0, 0.5);
 }
 
@@ -25,20 +26,32 @@ body {
     overflow: hidden;
     z-index: -1;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
 
     background-color: var(--clr-bgblu);
     background-image: url('images/hero-image.jpg');
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     
-    height: 50vh;
+    height: 60vh;
     width: 100%;
 }
 
-.title-container {
+.matrix {
+    width: 400px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.langs {
+    width: 500px;
+}
+
+/* ////////////////////////////DO NOT DELETE//////////////////////////// */
+/* .title-container {
     background-color: var(--clr-clearblk);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
@@ -46,9 +59,9 @@ body {
     align-items: center;
     justify-content: center;
     width: auto;
-}
+} */
 
-.title {
+/* .title {
     width: 99%;
     text-align: center;
 
@@ -63,17 +76,19 @@ body {
     animation: 
         typing 2s steps(17),
         cursor .5s step-end infinite alternate;
-}
+} */
 
 /*cursor blinking*/
-@keyframes cursor {
+/* @keyframes cursor {
     50% { border-color: transparent; }
-}
+} */
 
 /* typing animation */
-@keyframes typing {
+/* @keyframes typing {
     from { width: 0 }
-}
+} */
+ /* ////////////////////////////DO NOT DELETE//////////////////////////// */
+
 
 nav {
     transition: 1s;
@@ -102,14 +117,6 @@ nav a {
     color: black;
 }
 
-.icon:hover {
-    transition: 1s;
-    border-radius: 50% !important;
-    animation: 
-        rotation 1s forwards,
-        pulse 1s 1s ease-in-out infinite;
-}
-
 .main {
     background-color: var(--clr-bgblu);
     height: auto;
@@ -121,6 +128,8 @@ nav a {
     padding: 10%;
     display: flex;
     align-items: center;
+    animation: 
+    pulse 1s ease-in-out infinite;
 }
 
 #openbutton {
@@ -131,9 +140,14 @@ nav a {
 }
 
 footer {
-    background-color: var(--clr-primary);
+    
+    background-color: var(--clr-bgblu);
+    background-image: url('images/hero-image-180deg.jpg');
+    background-size: cover;
+    background-position: center;
+
     width: 100%;
-    height: 20vh;
+    height: 40vh;
 
     position: sticky;
     bottom: 0;
@@ -150,8 +164,9 @@ footer {
     text-align: center;
     color: var(--clr-white);
     width: 90%;
-    height: 90%;
-    background-color: var(--clr-clearblk);
+    height: 80%;
+    background-color: var(--clr-bgblu2);
+    padding: 0 5%;
 }
 
 .hidden-container {
@@ -243,7 +258,7 @@ footer {
 }
 
 
-/* *********POP UP EDITING********* */
+/* ****************************POP UP NAVBOX**************************** */
 .popup {
 
     height: 70%;
@@ -406,7 +421,7 @@ footer {
         rotation 1s forwards,
         pulse 1s 1s ease-in-out infinite; */
 }
-/* *********POP UP EDITING********* */
+/* ****************************POP UP NAVBOX**************************** */
 
 
 /* Time App */
