@@ -6,6 +6,11 @@
     --clr-clearblk: rgba(0, 0, 0, 0.5);
 }
 
+@font-face {
+    font-family: myCyberFont;
+    src: url(./fonts/Cyberthrone.ttf);
+ }
+
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +45,14 @@ body {
     width: 100%;
 }
 
+header h1 {
+    font-family: myCyberFont, monospace;
+    font-size: 75px;
+    font-weight: 100;
+}
+
 .profile-picture {
-    width: 25rem;
+    width: 20rem;
     border-radius: 1.5rem;
     box-shadow: 0px 0px 15px 2px black;
 }
