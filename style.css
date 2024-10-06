@@ -284,7 +284,7 @@ footer {
 
     overflow: hidden;
     visibility: hidden;
-    transition: transform .5s, top .3s;
+    transition: transform .3s, top .2s;
 }
 
 .open-popup {
