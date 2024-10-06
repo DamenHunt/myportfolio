@@ -40,9 +40,14 @@ body {
     width: 100%;
 }
 
-.matrix {
+.profile-picture {
     width: 25rem;
     border-radius: 1.5rem;
+    box-shadow: 0px 0px 15px 2px black;
+}
+
+.skills {
+    width: 200px;
 }
 
 /* ////////////////////////////DO NOT DELETE//////////////////////////// */
@@ -571,6 +576,7 @@ footer {
 @media(max-width: 650px) {
     .hero { font-size: 1.3rem; }
     .matrix { width: 20rem; }
+    .skills { width: 150px; }
     .icon { height: 3.2rem; }
     .top-inner-left a { font-size: 1.7rem; }
     #openbutton { height: 4rem;}
