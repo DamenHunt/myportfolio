@@ -579,7 +579,7 @@ footer {
 /* For Mobile Device Scaling */
 @media(max-width: 650px) {
     .hero { font-size: 1.3rem; }
-    .profile-picture { width: 20rem; }
+    .profile-picture { width: 15rem; }
     .skills { width: 150px; }
     .icon { height: 3.2rem; }
     .top-inner-left a { font-size: 1.7rem; }
